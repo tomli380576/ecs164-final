@@ -16,4 +16,4 @@ Vite: https://vitejs.dev/guide/#scaffolding-your-first-vite-project
 MUI: https://mui.com/getting-started/installation/
 
 React: https://reactjs.org/tutorial/tutorial.html#function-components
-- We will be using functional components only so don't spend too much time on class components. Be sure to read the hooks section becuase they can be quite confusing.
+
