@@ -6,6 +6,13 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
+import { styled } from '@mui/material/styles';
+
+const Div = styled('div')(({ theme }) => ({
+  ...theme.typography.button,
+  backgroundColor: theme.palette.background.paper,
+  padding: theme.spacing(1),
+}));
 
 export const Requirement = () => {
   return (
@@ -20,20 +27,21 @@ export const Requirement = () => {
             direction="column"
             justifyContent="center"
             alignItems="flex-start"
-            spacing={2}
+            spacing={1}
           >
-            <Typography variant="h5" style={{ fontWeight: 600}}>University Requirements for Bachelor of Science</Typography>
-            <Stack 
-              ml={3}
-              alignItems="flex-start"
-              direction="column"
-              justifyContent="center"
-              spacing={1}
+            <Stack
+              direction="row"
+              justifyContent="space-between"  
             >
-              <Typography variant="subtitle1">Units Required:</Typography>
-              <Typography variant="subtitle1">Units Applied:</Typography>
-              <Typography variant="subtitle1">Catalog Year:</Typography>
+              <Typography variant="h5" style={{ fontWeight: 600}}>University Requirements for Bachelor of Science</Typography>
+              <Div>{"INCOMPLETE"}</Div>
             </Stack>
+            <div>
+              <Typography variant="subtitle1" ml={2}>Units Required:</Typography>
+              <Typography variant="subtitle1" ml={2}>Units Applied:</Typography>
+              <Typography variant="subtitle1" ml={2}>Catalog Year:</Typography>
+            </div>
+            
           </Stack>
         </AccordionSummary>
         <AccordionDetails>
