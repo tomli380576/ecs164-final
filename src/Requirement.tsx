@@ -22,8 +22,15 @@ const Div = styled('div')({
   // position: "absolute"
 });
 
+const Whole = styled('div')({
+  border: 0,
+  borderRadius: 5,
+  width: '1424px',
+})
+
 export const Requirement = () => {
   return (
+    <Whole>
     <div>
       <Accordion>
         <AccordionSummary
@@ -75,5 +82,6 @@ export const Requirement = () => {
         </AccordionDetails>
       </Accordion>
     </div>
+    </Whole>
   );
 }
