@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
-import { TestComponent } from './TestComponent';
+import { TitleBar } from './TitleBar';
 
 function App() {
-
   return (
-    <TestComponent/>
+    <TitleBar />
   )
 }
 
