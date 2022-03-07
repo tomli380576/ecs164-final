@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { TestComponent } from './TestComponent';
+import { QuickLinks } from './QuickLinks';
 
 function App() {
-
   return (
-    <TestComponent/>
+    <QuickLinks/>
   )
 }
 
