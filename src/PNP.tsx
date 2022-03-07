@@ -14,7 +14,7 @@ import Alert from '@mui/material/Alert';
 export const PNP = () => {
   return (
     <div>
-      <Accordion>
+      <Accordion sx={{mb: 2}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
