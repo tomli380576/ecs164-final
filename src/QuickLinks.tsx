@@ -6,6 +6,9 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { PNP } from './PNP';
 import { Nonstandard } from './Nonstandard';
+import { Major } from './Major';
+import { Requirement } from './Requirement';
+import Stack from '@mui/material/Stack';
 
 
 export const QuickLinks = () => {
@@ -30,10 +33,10 @@ export const QuickLinks = () => {
         </Box>
         <TabPanel value="1">TODO</TabPanel>
         <TabPanel value="2">TODO</TabPanel>
-        <TabPanel value="3"><PNP/><Nonstandard/></TabPanel>
+        <TabPanel value="3"><Stack direction="column" spacing={2}><PNP/><Nonstandard/></Stack></TabPanel>
         <TabPanel value="4"></TabPanel>
         <TabPanel value="5">Item Two</TabPanel>
-        <TabPanel value="6">Item Three</TabPanel>
+        <TabPanel value="6"><Stack direction="column" spacing={2}><Major/><Requirement/></Stack></TabPanel>
       </TabContext>
     </Box>
   );
