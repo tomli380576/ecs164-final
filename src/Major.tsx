@@ -75,10 +75,10 @@ export const Major = () => {
                 ml={60}
                 spacing={20}
             >
-              <Typography>
+              <Typography style={{ fontWeight: 600}}>
                 Course
               </Typography>
-              <Typography>
+              <Typography style={{ fontWeight: 600}}>
                 Title
               </Typography>
             </Stack>
@@ -88,13 +88,13 @@ export const Major = () => {
               spacing={10}
               ml={40}
             >
-              <Typography>
+              <Typography style={{ fontWeight: 600}}>
                 Grade
               </Typography>
-              <Typography>
+              <Typography style={{ fontWeight: 600}}>
                 Units
               </Typography>
-              <Typography>
+              <Typography style={{ fontWeight: 600}}>
                 Terms
               </Typography>
             </Stack>
@@ -110,11 +110,22 @@ export const Major = () => {
               direction="column"
               divider={<Divider orientation="horizontal" flexItem />}
               spacing={3}
+              width={914}
+              pl={28}
             >
-              <Typography>ECS XXX</Typography>
-              <Typography>ECS XXX</Typography>
-              <Typography>Still Needed: 6 Units From Either</Typography>
+              <Typography style={{ fontWeight: 600}}>ECS XXX</Typography>
+              <Typography style={{ fontWeight: 600}}>ECS XXX</Typography>
+              <Stack>
+                <Typography style={{ fontWeight: 600}}>Still Needed: 6 Units From Either</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- ECS 120 : 189, 193A, 193B, 192, or 199</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- ECN 122</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- EEC 100, 171, 172, 180A, or 180B</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- LIN 127 or 177</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- MAT 100 : 189, except MAT 111</Typography>
+                <Typography style={{ fontWeight: 600}} sx={{ ml: 13}}>- STA 131A, 131B, 141B, or 141C</Typography>
+              </Stack>
             </Stack>
+              
           </Stack>
         </Stack>
 
