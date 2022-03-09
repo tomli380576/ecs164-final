@@ -8,7 +8,7 @@ Make sure you have NodeJS installed
 
 Then clone the repository and in your working directory, run `npm install` to install all the required packages
 
-Run `npm run dev` to start a local server and the app should be loaded at `localhoset:3000`
+Run `npm run dev` to start a local server and the app should be loaded at `localhost:3000`
 
 ## Links
 Vite: https://vitejs.dev/guide/#scaffolding-your-first-vite-project
