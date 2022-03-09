@@ -8,7 +8,9 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import { styled } from '@mui/material/styles';
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import { Icon } from '@mui/material';
+
+
+
 
 const Div = styled('div')({
   background: 'rgba(246, 199, 197, 0.14);',
@@ -19,18 +21,15 @@ const Div = styled('div')({
   width: '110px',
   height: '24px',
   fontWeight: 500
-  // left: '671px',
-  // top: '538px',
-  // position: "absolute"
 });
 
 const Whole = styled('div')({
   border: 0,
   borderRadius: 5,
-  width: '1424px',
+  width: '100%',
 })
 
-export const Major = () => {
+export const Major: React.FC = () => {
   return (
     <Whole>
     <div>
