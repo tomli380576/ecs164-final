@@ -1,43 +1,74 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+import { Tab, Tabs, Stack, Box } from '@mui/material';
 import { PNP } from './PNP';
 import { Nonstandard } from './Nonstandard';
 import { Major } from './Major';
 import { Requirement } from './Requirement';
-import Stack from '@mui/material/Stack';
 
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          {children}
+        </Box>
+      )}
+    </div>
+  );
+}
 
 export const QuickLinks = () => {
-  const [value, setValue] = React.useState('1');
+  const [currTab, setCurrTab] = React.useState<number>(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setCurrTab(newValue);
   };
 
   return (
     <Box sx={{ width: '100%', typography: 'body1' }}>
-      <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Dashboard" value="1" />
-            <Tab label="What if" value="2" />
-            <Tab label="Complete" value="3" />
-            <Tab label="In Progress" value="4" />
-            <Tab label="Planned" value="5" />
-            <Tab label="Incomplete" value="6" />
-          </TabList>
-        </Box>
-        <TabPanel value="1">TODO</TabPanel>
-        <TabPanel value="2">TODO</TabPanel>
-        <TabPanel value="3"><Stack direction="column" spacing={2}><PNP/><Nonstandard/></Stack></TabPanel>
-        <TabPanel value="4"></TabPanel>
-        <TabPanel value="5">Item Two</TabPanel>
-        <TabPanel value="6"><Stack direction="column" spacing={2}><Major/><Requirement/></Stack></TabPanel>
-      </TabContext>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={currTab} onChange={handleChange} variant="fullWidth">
+          <Tab label="Dashboard" value={0} />
+          <Tab label="What if" value={1} />
+          <Tab label="Complete" value={2} />
+          <Tab label="In Progress" value={3} />
+          <Tab label="Planned" value={4} />
+          <Tab label="Incomplete" value={5} />
+        </Tabs>
+      </Box>
+      <TabPanel value={currTab} index={0}>TODO</TabPanel>
+      <TabPanel value={currTab} index={1}>TODO</TabPanel>
+
+      <TabPanel value={currTab} index={2}>
+        <Stack direction="column" spacing={2}>
+          <PNP />
+          <Nonstandard />
+        </Stack>
+      </TabPanel>
+
+      <TabPanel value={currTab} index={3}></TabPanel>
+      <TabPanel value={currTab} index={4}>Item Two</TabPanel>
+
+      <TabPanel value={currTab} index={5}>
+        <Stack direction="column" spacing={2}>
+          <Major />
+          <Requirement />
+        </Stack>
+      </TabPanel>
     </Box>
   );
 }

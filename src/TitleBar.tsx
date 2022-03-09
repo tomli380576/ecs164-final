@@ -1,5 +1,8 @@
-import { Stack, Button, Typography, Avatar, Box, Grid } from "@mui/material";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {
+  Stack,
+  Typography,
+  Avatar
+} from "@mui/material";
 
 export const TitleBar: React.FC = () => {
   return (

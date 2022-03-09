@@ -8,7 +8,8 @@ function App() {
   return (
     <Stack direction="column">
       <TitleBar />
-      <Major />
+      {/* <Major /> */}
+      <QuickLinks />
     </Stack>
   )
 }
