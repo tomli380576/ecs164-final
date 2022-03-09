@@ -33,10 +33,10 @@ export const QuickLinks = () => {
         </Box>
         <TabPanel value="1">TODO</TabPanel>
         <TabPanel value="2">TODO</TabPanel>
-        <TabPanel value="3"><Stack direction="column" spacing={2}><PNP/><Nonstandard/></Stack></TabPanel>
+        <TabPanel value="3"><Stack direction="column" spacing={2} alignItems="center"><PNP/><Nonstandard/></Stack></TabPanel>
         <TabPanel value="4"></TabPanel>
         <TabPanel value="5">Item Two</TabPanel>
-        <TabPanel value="6"><Stack direction="column" spacing={2}><Major/><Requirement/></Stack></TabPanel>
+        <TabPanel value="6"><Stack direction="column" spacing={2} alignItems="center"><Major/><Requirement/></Stack></TabPanel>
       </TabContext>
     </Box>
   );
