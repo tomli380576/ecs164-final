@@ -16,10 +16,10 @@ export const TitleBar: React.FC = () => {
         alignItems="center"
       >
         <div></div>
+
         <Typography variant="h3">
           UC Davis MyDegree
         </Typography>
-
 
         <div style={{
           display: 'flex',
@@ -47,7 +47,7 @@ export const TitleBar: React.FC = () => {
           alignItems: 'center',
           flexWrap: 'wrap',
         }}>
-          <Avatar sx={{ marginRight: "10px" }} />
+          <Avatar sx={{ marginRight: "20px" }} />
           <Typography variant="body1" sx={{ maxWidth: '30%' }}>
             Student&nbsp;Name:<br />
             SID:<br />

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Tab, Tabs, Stack, Box } from '@mui/material';
 import { PNP } from './PNP';
-import { Nonstandard } from './Nonstandard';
+import { NonStandardCourses } from './Nonstandard';
 import { Major } from './Major';
 import { Requirement } from './Requirement';
 
@@ -56,7 +56,7 @@ export const QuickLinks = () => {
       <TabPanel value={currTab} index={2}>
         <Stack direction="column" spacing={2}>
           <PNP />
-          <Nonstandard />
+          <NonStandardCourses />
         </Stack>
       </TabPanel>
 

@@ -5,11 +5,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Alert from '@mui/material/Alert';
-
+import { CompletionStatus } from './Requirement';
 
 export const PNP = () => {
   return (
@@ -32,7 +31,7 @@ export const PNP = () => {
             spacing={5}  
           >
             <Typography variant="h5" style={{ fontWeight: 600}}>Classes Taken Passed/Not Passed</Typography>
-            <Alert severity="success" variant="filled" icon={false}>COMPLETE</Alert>
+            <CompletionStatus complete={true}/>
           </Stack>
           <div>
             <Typography variant="subtitle1" ml={2}>Units Applied: 44</Typography>
