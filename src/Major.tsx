@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import { CompletionStatus } from './Requirement';
+import { CompletionStatus } from './GenericRequirement';
 
 export const Major: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ export const Major: React.FC = () => {
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>Major in Computer Science, BS</Typography>
-            <CompletionStatus complete={false} />
+            <CompletionStatus status="incomplete" />
           </Stack>
           <div>
             <Typography variant="subtitle1" ml={2}>Units Required:</Typography>

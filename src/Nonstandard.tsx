@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Alert from '@mui/material/Alert';
-import { CompletionStatus } from './Requirement';
+import { CompletionStatus } from './GenericRequirement';
 
 
 export const NonStandardCourses = () => {
@@ -31,7 +31,7 @@ export const NonStandardCourses = () => {
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>Nonstandard Courses</Typography>
-            <CompletionStatus complete={true} />
+            <CompletionStatus status='complete' />
           </Stack>
           <div>
             <Typography variant="subtitle1" ml={2}>Units Applied: 44</Typography>

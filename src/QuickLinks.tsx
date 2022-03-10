@@ -1,9 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import { Tab, Tabs, Stack, Box } from '@mui/material';
 import { PNP } from './PNP';
 import { NonStandardCourses } from './Nonstandard';
 import { Major } from './Major';
-import { Requirement } from './Requirement';
+import { UniversityRequirement } from './UniversityRequirement';
+import { GeneralEducation } from './GE_Accordion';
+import { Dashboard } from './Dashboard';
+import { Requirement } from './GenericRequirement';
+import { EnglishCompReq, ScienceAndMathReq } from './hardcodedData';
+import { Typography } from '@mui/material';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -50,8 +55,14 @@ export const QuickLinks = () => {
           <Tab label="Incomplete" value={5} />
         </Tabs>
       </Box>
-      <TabPanel value={currTab} index={0}>TODO</TabPanel>
-      <TabPanel value={currTab} index={1}>TODO</TabPanel>
+
+      <TabPanel value={currTab} index={0}>
+        <Dashboard />
+
+      </TabPanel>
+
+      <TabPanel value={currTab} index={1}>
+      </TabPanel>
 
       <TabPanel value={currTab} index={2}>
         <Stack direction="column" spacing={2}>
@@ -60,13 +71,24 @@ export const QuickLinks = () => {
         </Stack>
       </TabPanel>
 
-      <TabPanel value={currTab} index={3}></TabPanel>
+      <TabPanel value={currTab} index={3}>
+        <Stack direction="column" spacing={2}>
+          <Requirement {...EnglishCompReq}>
+            <Typography variant="body2">
+              E N G R I S H
+            </Typography>
+          </Requirement>
+          <Requirement {...ScienceAndMathReq} />
+        </Stack>
+      </TabPanel>
+
       <TabPanel value={currTab} index={4}>Item Two</TabPanel>
 
       <TabPanel value={currTab} index={5}>
         <Stack direction="column" spacing={2}>
           <Major />
-          <Requirement />
+          <UniversityRequirement />
+          <GeneralEducation />
         </Stack>
       </TabPanel>
     </Box>

@@ -6,29 +6,9 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
-import { styled } from '@mui/material/styles';
+import { CompletionStatus } from './GenericRequirement';
 
-export const CompletionStatus: React.FC<{complete: boolean}> = props => {
-  const complete = props.complete;
-  const foregroundColor = complete ? "rgba(55, 126, 81, 1)" : 'rgba(195, 58, 50)';
-  const backgroundColor = complete ? 'rgba(236, 247, 242, 1)' : 'rgba(246, 199, 197, 0.3)';
-
-  const StatusComponent = styled('div')({
-    background: backgroundColor,
-    border: 0,
-    borderRadius: 4,
-    color: foregroundColor,
-    padding: '6px',
-    width: '110px',
-    height: '24px',
-    textAlign:'center',
-    fontWeight: 500
-  });
-
-  return <StatusComponent> {complete ? 'COMPLETE' : 'INCOMPLETE'} </StatusComponent>
-}
-
-export const Requirement = () => {
+export const UniversityRequirement: React.FC = () => {
   return (
     <Accordion>
       <AccordionSummary
@@ -48,7 +28,7 @@ export const Requirement = () => {
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>University Requirements for Bachelor of Science</Typography>
-            <CompletionStatus complete={false} />
+            <CompletionStatus status={'incomplete'} />
           </Stack>
 
           <div>
