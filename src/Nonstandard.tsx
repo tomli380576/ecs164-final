@@ -51,7 +51,7 @@ export const NonStandardCourses = () => {
             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum justo non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id consectetur ex." />
           </ListItem>
           <ListItem divider>
-            <ListItemText primary="lol" />
+            <ListItemText primary="placeholder" />
           </ListItem>
         </Stack>
       </AccordionDetails>

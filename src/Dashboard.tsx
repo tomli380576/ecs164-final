@@ -82,13 +82,16 @@ export const Dashboard: React.FC = () => {
         alignItems="stretch"
         spacing={3}
       >
-        <Grid item xs={6} sx={{ height: '100%' }}>
+        <Grid item xs={6} sx={{ maxHeight: '100%' }}>
           <Card >
             <CardHeader title="Welcome!" sx={{ paddingBottom: '0' }} />
             <CardContent >
               <Typography variant="body1">
                 This is a degree audit tool
               </Typography>
+              <div style={{ height: '172px' }}>
+
+              </div>
             </CardContent>
           </Card>
         </Grid>

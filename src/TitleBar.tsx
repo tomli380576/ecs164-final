@@ -29,7 +29,7 @@ export const TitleBar: React.FC = () => {
           <Avatar />
           <Typography variant="h6">
             &nbsp;
-            Student
+            Dan Adler
           </Typography>
         </div>
       </Stack>
@@ -49,8 +49,8 @@ export const TitleBar: React.FC = () => {
         }}>
           <Avatar sx={{ marginRight: "20px" }} />
           <Typography variant="body1" sx={{ maxWidth: '30%' }}>
-            Student&nbsp;Name:<br />
-            SID:<br />
+            Student&nbsp;Name:&nbsp;Dan&nbsp;Adler<br />
+            SID:&nbsp;12345678<br />
             student@ucdavis.edu
           </Typography>
         </div>
