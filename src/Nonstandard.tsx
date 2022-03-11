@@ -28,6 +28,7 @@ export const NonStandardCourses = () => {
           <Stack
             direction="row"
             justifyContent="space-between"
+            alignItems="center"
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>Nonstandard Courses</Typography>

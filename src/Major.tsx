@@ -26,6 +26,7 @@ export const Major: React.FC = () => {
           <Stack
             direction="row"
             justifyContent="space-between"
+            alignItems="center"
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>Major in Computer Science, BS</Typography>

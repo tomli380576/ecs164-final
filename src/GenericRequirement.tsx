@@ -47,9 +47,8 @@ export const CompletionStatus: React.FC<{ status: CompletionStatus }> = props =>
     borderRadius: 4,
     color: foregroundColor,
     padding: '10px',
-
     textAlign: 'center',
-    fontWeight: 500
+    fontWeight: 500,
   });
 
   // handles the special case of inProgress 
@@ -71,6 +70,7 @@ export const Requirement: React.FC<RequirementProps> = props => {
           <Stack
             direction="row"
             justifyContent="space-between"
+            alignItems="center"
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>{props.title}</Typography>

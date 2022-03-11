@@ -28,6 +28,7 @@ export const GeneralEducation = () => {
           <Stack
             direction="row"
             justifyContent="space-between"
+            alignItems="center"
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>General Education</Typography>

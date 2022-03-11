@@ -25,6 +25,7 @@ export const PNP = () => {
           <Stack
             direction="row"
             justifyContent="space-between"
+            alignItems="center"
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>Classes Taken Passed/Not Passed</Typography>
