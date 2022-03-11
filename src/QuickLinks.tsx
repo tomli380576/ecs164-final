@@ -7,7 +7,7 @@ import { UniversityRequirement } from './UniversityRequirement';
 import { GeneralEducation } from './GE_Accordion';
 import { Dashboard } from './Dashboard';
 import { Requirement } from './GenericRequirement';
-import { EnglishCompReq, ScienceAndMathReq } from './hardcodedData';
+import { EnglishCompReq, ScienceAndMathReq, MajorReq, MajorReqDesign } from './hardcodedData';
 import { Typography } from '@mui/material';
 
 interface TabPanelProps {
@@ -75,14 +75,16 @@ export const QuickLinks = () => {
         <Stack direction="column" spacing={2}>
           <Requirement {...EnglishCompReq}>
             <Typography variant="body2">
-              E N G R I S H
+              English Requirement Description
             </Typography>
           </Requirement>
           <Requirement {...ScienceAndMathReq} />
         </Stack>
       </TabPanel>
 
-      <TabPanel value={currTab} index={4}>Item Two</TabPanel>
+      <TabPanel value={currTab} index={4}>
+        <Requirement {...MajorReqDesign} />
+      </TabPanel>
 
       <TabPanel value={currTab} index={5}>
         <Stack direction="column" spacing={2}>

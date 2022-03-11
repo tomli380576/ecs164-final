@@ -5,7 +5,7 @@ export const EnglishCompReq: RequirementProps = {
   unitsApplied: 20,
   catalogYear: '2021',
   completionStatus: 'inProgress',
-  additionalNotes: 'I hate writing',
+  additionalNotes: 'Writing Related Courses',
   unitsRequired: 30
 }
 
@@ -15,7 +15,7 @@ export const ScienceAndMathReq: RequirementProps = {
   unitsRequired: 40,
   catalogYear: '2022',
   completionStatus: 'inProgress',
-  additionalNotes: 'T R I V I A L',
+  additionalNotes: 'Math',
 }
 
 export const UniReq: RequirementProps = {
@@ -28,11 +28,19 @@ export const UniReq: RequirementProps = {
 }
 
 export const MajorReq: RequirementProps = {
-  title: '',
-  unitsApplied: 0,
-  unitsRequired: 0,
-  catalogYear: '',
-  completionStatus: 'complete',
+  title: 'Computer Science',
+  unitsApplied: 50,
+  unitsRequired: 90,
+  catalogYear: '2020-2022',
+  completionStatus: 'planned',
   additionalNotes: ''
 }
 
+export const MajorReqDesign: RequirementProps = {
+  title: 'Design',
+  unitsApplied: 0,
+  unitsRequired: 0,
+  catalogYear: '',
+  completionStatus: 'planned',
+  additionalNotes: ''
+}

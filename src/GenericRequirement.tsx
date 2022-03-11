@@ -74,7 +74,7 @@ export const Requirement: React.FC<RequirementProps> = props => {
             spacing={5}
           >
             <Typography variant="h5" style={{ fontWeight: 600 }}>{props.title}</Typography>
-            <CompletionStatus status="inProgress" />
+            <CompletionStatus status={props.completionStatus} />
           </Stack>
 
           <div>
