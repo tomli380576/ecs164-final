@@ -10,7 +10,7 @@ import { CompletionStatus } from './GenericRequirement';
 
 export const PNP = () => {
   return (
-    <Accordion sx={{ mb: 2 }}>
+    <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"

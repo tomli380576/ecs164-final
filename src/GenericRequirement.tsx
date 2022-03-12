@@ -34,7 +34,7 @@ export const CompletionStatus: React.FC<{ status: CompletionStatus }> = props =>
     },
     planned: {
       foreground: '#8A6900',
-      background: 'rgba(191, 164, 136, 1)',
+      background: 'rgba(191, 164, 136, 0.3)',
     }
   }
 

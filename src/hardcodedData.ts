@@ -37,7 +37,7 @@ export const MajorReq: RequirementProps = {
 }
 
 export const MajorReqDesign: RequirementProps = {
-  title: 'Design',
+  title: 'Major in Design, BA',
   unitsApplied: 0,
   unitsRequired: 0,
   catalogYear: '',

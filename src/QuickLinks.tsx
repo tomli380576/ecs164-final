@@ -83,7 +83,9 @@ export const QuickLinks = () => {
       </TabPanel>
 
       <TabPanel value={currTab} index={4}>
-        <Requirement {...MajorReqDesign} />
+        <Requirement {...MajorReqDesign}>
+          Placeholder Text
+        </Requirement>
       </TabPanel>
 
       <TabPanel value={currTab} index={5}>
